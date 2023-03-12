@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply font-inter bg-[#292b32];
+  }
+  a,
+  Link {
+    @apply text-inherit;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.carousel-prev,
+.carousel-next {
+  @apply w-12 h-12 bg-gray-400 hover:bg-gray-500 top-0 bottom-0 m-auto;
+}
