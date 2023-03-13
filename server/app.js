@@ -4,17 +4,15 @@ import colors from "colors";
 import express from "express";
 import cors from "cors";
 import apiRoutes from "./routes/api.routes.js";
-import bodyParser from "body-parser"
+import bodyParser from "body-parser";
 
 const app = express();
-
 
 // middlewareS
 app.use(cors());
 app.use(express.json());
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: true }))
-
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // const response = await openai.listEngines();
 
